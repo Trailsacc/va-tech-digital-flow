@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
@@ -36,16 +35,7 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="#" className="flex items-center text-2xl font-bold group">
-          <div className="mr-2 relative">
-            <div className="bg-gradient-tech p-2 rounded-md shadow-lg shadow-vatech-blue/20 group-hover:shadow-vatech-blue/30 transition-all duration-300 flex items-center justify-center">
-              <Code size={24} className="text-white mr-1" />
-              <Zap size={20} className="text-white animate-pulse" />
-            </div>
-            <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-vatech-teal rounded-full animate-ping opacity-70"></div>
-          </div>
-          <span className="text-gradient group-hover:opacity-90 transition-opacity">VA Technologies</span>
-        </a>
+        <a href="#" className="text-2xl font-bold text-gradient">VA Technologies</a>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
