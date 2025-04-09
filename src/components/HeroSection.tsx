@@ -60,12 +60,12 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Button className="bg-gradient-tech text-white hover:opacity-90 transition-opacity px-8 py-6">
+            <Button className="bg-gradient-tech text-white hover:opacity-90 transition-opacity px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-vatech-blue/20 transition-all duration-300">
               Our Services
               <ArrowRight size={16} className="ml-2" />
             </Button>
             
-            <Button variant="outline" className="border-white/20 hover:bg-white/5 transition-colors px-8 py-6">
+            <Button variant="outline" className="border-white/20 hover:bg-white/5 transition-colors px-8 py-6 hover:scale-105 hover:border-vatech-blue/50 transition-all duration-300">
               View Portfolio
             </Button>
           </div>
@@ -73,12 +73,12 @@ const HeroSection = () => {
         
         <div className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {[
-            { number: '150+', label: 'Projects Delivered' },
-            { number: '12+', label: 'Years Experience' },
-            { number: '50+', label: 'Happy Clients' },
-            { number: '99%', label: 'Client Satisfaction' },
+            { number: '35+', label: 'Projects Completed' },
+            { number: '5+', label: 'Years Experience' },
+            { number: '20+', label: 'Happy Clients' },
+            { number: '95%', label: 'Client Satisfaction' },
           ].map((stat, index) => (
-            <div key={index} className="glass-card p-4 rounded-lg text-center">
+            <div key={index} className="glass-card p-4 rounded-lg text-center transform hover:scale-105 hover:shadow-lg hover:shadow-vatech-blue/20 transition-all duration-300">
               <h3 className="text-3xl font-bold text-gradient">{stat.number}</h3>
               <p className="text-white/60 text-sm">{stat.label}</p>
             </div>
